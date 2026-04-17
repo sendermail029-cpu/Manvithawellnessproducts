@@ -157,3 +157,161 @@ Creating turbopack project { dir: 'C:\\Users\\DELL\\Downloads\\glucoamruth-main'
  GET /weight-loss-juice 200 in 96ms (compile: 6ms, render: 89ms)
 ✓ Compiled in 71ms
  GET /weight-loss-juice 200 in 448ms (compile: 183ms, render: 265ms)
+ GET / 200 in 1147ms (compile: 277ms, render: 870ms)
+ GET /weight-loss-juice 404 in 790ms (compile: 172ms, render: 618ms)
+ GET / 200 in 549ms (compile: 36ms, render: 513ms)
+ GET /weight-loss-juice 404 in 111ms (compile: 12ms, render: 99ms)
+ GET /weight-loss-juice 404 in 460ms (compile: 30ms, render: 430ms)
+ GET / 200 in 392ms (compile: 185ms, render: 207ms)
+ GET /weight-loss-juice 404 in 518ms (compile: 78ms, render: 440ms)
+ GET / 200 in 175ms (compile: 25ms, render: 150ms)
+ GET / 200 in 153ms (compile: 9ms, render: 144ms)
+ GET / 200 in 157ms (compile: 7ms, render: 150ms)
+ GET / 200 in 156ms (compile: 5ms, render: 151ms)
+ GET / 200 in 136ms (compile: 9ms, render: 127ms)
+ GET / 200 in 90ms (compile: 6ms, render: 84ms)
+ GET / 200 in 53ms (compile: 6ms, render: 47ms)
+ GET / 200 in 287ms (compile: 136ms, render: 151ms)
+ GET / 200 in 145ms (compile: 6ms, render: 139ms)
+ GET / 200 in 149ms (compile: 5ms, render: 143ms)
+ GET / 200 in 183ms (compile: 8ms, render: 174ms)
+ GET / 200 in 404ms (compile: 5ms, render: 399ms)
+ GET / 200 in 364ms (compile: 5ms, render: 360ms)
+ GET / 200 in 325ms (compile: 5ms, render: 319ms)
+ GET /weight-loss-juice 200 in 574ms (compile: 458ms, render: 116ms)
+ GET / 200 in 201ms (compile: 6ms, render: 195ms)
+ GET / 200 in 316ms (compile: 14ms, render: 302ms)
+ GET /weight-loss-juice 200 in 329ms (compile: 95ms, render: 233ms)
+ GET /weight-loss-juice 200 in 419ms (compile: 121ms, render: 298ms)
+ GET /weight-loss-juice 200 in 419ms (compile: 54ms, render: 365ms)
+ GET /weight-loss-juice 200 in 73ms (compile: 23ms, render: 51ms)
+ GET / 200 in 478ms (compile: 9ms, render: 469ms)
+ GET /weight-loss-juice 200 in 337ms (compile: 13ms, render: 325ms)
+ GET /weight-loss-juice 200 in 122ms (compile: 6ms, render: 116ms)
+ GET /weight-loss-juice 200 in 95ms (compile: 4ms, render: 92ms)
+✓ Compiled in 139ms
+ GET /weight-loss-juice 200 in 619ms (compile: 177ms, render: 442ms)
+✓ Compiled in 211ms
+ GET / 200 in 546ms (compile: 247ms, render: 299ms)
+ GET / 200 in 1105ms (compile: 422ms, render: 682ms)
+ GET / 200 in 667ms (compile: 6ms, render: 661ms)
+ GET /weight-loss-juice 200 in 673ms (compile: 330ms, render: 343ms)
+ GET / 200 in 309ms (compile: 7ms, render: 302ms)
+ GET /weight-loss-juice 200 in 353ms (compile: 17ms, render: 336ms)
+ GET / 200 in 302ms (compile: 22ms, render: 280ms)
+ GET /weight-loss-juice 200 in 276ms (compile: 14ms, render: 261ms)
+ GET / 200 in 256ms (compile: 10ms, render: 246ms)
+ GET /weight-loss-juice 200 in 287ms (compile: 45ms, render: 242ms)
+ GET / 200 in 214ms (compile: 6ms, render: 208ms)
+ GET /weight-loss-juice 200 in 281ms (compile: 8ms, render: 273ms)
+ GET / 200 in 349ms (compile: 14ms, render: 335ms)
+ GET /weight-loss-juice 200 in 301ms (compile: 8ms, render: 293ms)
+ GET / 200 in 252ms (compile: 10ms, render: 242ms)
+ GET /weight-loss-juice 200 in 249ms (compile: 53ms, render: 196ms)
+ GET / 200 in 235ms (compile: 6ms, render: 229ms)
+ GET / 200 in 356ms (compile: 10ms, render: 346ms)
+ GET /weight-loss-juice 200 in 375ms (compile: 70ms, render: 306ms)
+ GET / 200 in 272ms (compile: 12ms, render: 261ms)
+ GET /weight-loss-juice 200 in 272ms (compile: 54ms, render: 218ms)
+ GET / 200 in 289ms (compile: 9ms, render: 280ms)
+ GET /weight-loss-juice 200 in 292ms (compile: 51ms, render: 241ms)
+ GET / 200 in 346ms (compile: 11ms, render: 335ms)
+ GET /weight-loss-juice 200 in 349ms (compile: 39ms, render: 310ms)
+ GET / 200 in 264ms (compile: 10ms, render: 254ms)
+ GET /weight-loss-juice 200 in 358ms (compile: 72ms, render: 286ms)
+ GET / 200 in 267ms (compile: 9ms, render: 258ms)
+ GET /weight-loss-juice 200 in 319ms (compile: 52ms, render: 268ms)
+ GET / 200 in 319ms (compile: 11ms, render: 309ms)
+ GET /weight-loss-juice 200 in 321ms (compile: 44ms, render: 277ms)
+ GET / 200 in 254ms (compile: 9ms, render: 245ms)
+ GET /weight-loss-juice 200 in 297ms (compile: 53ms, render: 244ms)
+ GET / 200 in 336ms (compile: 6ms, render: 329ms)
+ GET /weight-loss-juice 200 in 338ms (compile: 6ms, render: 331ms)
+ GET / 200 in 334ms (compile: 5ms, render: 329ms)
+ GET /weight-loss-juice 200 in 375ms (compile: 40ms, render: 335ms)
+ GET / 200 in 297ms (compile: 7ms, render: 290ms)
+ GET /weight-loss-juice 200 in 253ms (compile: 7ms, render: 246ms)
+ GET /weight-loss-juice 200 in 106ms (compile: 6ms, render: 99ms)
+ GET /weight-loss-juice 200 in 57ms (compile: 7ms, render: 50ms)
+ GET /weight-loss-juice 200 in 278ms (compile: 5ms, render: 273ms)
+ GET / 200 in 158ms (compile: 9ms, render: 149ms)
+ GET /weight-loss-juice 200 in 586ms (compile: 321ms, render: 265ms)
+✓ Compiled in 128ms
+ GET /digestive-juice 200 in 552ms (compile: 256ms, render: 296ms)
+✓ Compiled in 119ms
+ GET /weight-loss-juice 200 in 968ms (compile: 353ms, render: 615ms)
+ GET / 200 in 540ms (compile: 237ms, render: 303ms)
+ GET / 200 in 202ms (compile: 6ms, render: 196ms)
+✓ Compiled in 129ms
+ GET /digestive-juice 200 in 467ms (compile: 259ms, render: 208ms)
+ GET / 200 in 478ms (compile: 208ms, render: 270ms)
+✓ Compiled in 164ms
+ GET /digestive-juice 200 in 567ms (compile: 224ms, render: 343ms)
+✓ Compiled in 109ms
+ GET /digestive-juice 200 in 336ms (compile: 137ms, render: 199ms)
+ GET / 200 in 702ms (compile: 462ms, render: 240ms)
+ GET / 200 in 161ms (compile: 7ms, render: 154ms)
+ GET / 200 in 362ms (compile: 14ms, render: 348ms)
+✓ Compiled in 56ms
+✓ Compiled in 67ms
+✓ Compiled in 82ms
+✓ Compiled in 51ms
+✓ Compiled in 211ms
+ GET /testimonials/rekha.jpg 404 in 458ms (compile: 143ms, render: 315ms)
+ GET /testimonials/sandhya.jpg 404 in 453ms (compile: 296ms, render: 158ms)
+ GET /weight-loss-collage.jpg 404 in 367ms (compile: 16ms, render: 351ms)
+ GET /testimonials/anupama.jpg 404 in 365ms (compile: 104ms, render: 261ms)
+ GET /testimonials/padmavathi.jpg 404 in 167ms (compile: 31ms, render: 136ms)
+ GET /testimonials/priya.jpg 404 in 128ms (compile: 11ms, render: 116ms)
+ GET /testimonials/meenakshi.jpg 404 in 324ms (compile: 19ms, render: 305ms)
+ GET /testimonials/meena.jpg 404 in 328ms (compile: 98ms, render: 229ms)
+ GET /testimonials/sumitra.jpg 404 in 144ms (compile: 27ms, render: 118ms)
+✓ Compiled in 100ms
+ GET /before-after/person1-before.jpg 404 in 104ms (compile: 8ms, render: 96ms)
+ GET /before-after/person1-after.jpg 404 in 106ms (compile: 43ms, render: 63ms)
+✓ Compiled in 79ms
+✓ Compiled in 68ms
+✓ Compiled in 50ms
+ GET /weight-loss-juice 200 in 352ms (compile: 160ms, render: 192ms)
+ GET /testimonials/rekha.jpg 404 in 495ms (compile: 25ms, render: 469ms)
+ GET /testimonials/sandhya.jpg 404 in 496ms (compile: 126ms, render: 370ms)
+ GET /testimonials/anupama.jpg 404 in 496ms (compile: 157ms, render: 338ms)
+ GET /testimonials/padmavathi.jpg 404 in 349ms (compile: 86ms, render: 264ms)
+ GET /testimonials/priya.jpg 404 in 289ms (compile: 77ms, render: 212ms)
+ GET /testimonials/meenakshi.jpg 404 in 192ms (compile: 39ms, render: 153ms)
+ GET /testimonials/sumitra.jpg 404 in 239ms (compile: 114ms, render: 125ms)
+ GET /testimonials/meena.jpg 404 in 246ms (compile: 82ms, render: 164ms)
+ GET /weight-loss-collage.jpg 404 in 120ms (compile: 12ms, render: 108ms)
+✓ Compiled in 172ms
+ GET /assets/transformations/user2.jpg 404 in 235ms (compile: 21ms, render: 214ms)
+ GET /assets/transformations/user3.jpg 404 in 233ms (compile: 115ms, render: 118ms)
+✓ Compiled in 50ms
+✓ Compiled in 153ms
+✓ Compiled in 127ms
+✓ Compiled in 84ms
+ GET /assets/transformations/user1-after.jpg 404 in 332ms (compile: 76ms, render: 256ms)
+ GET /assets/transformations/user1-before.jpg 404 in 340ms (compile: 25ms, render: 314ms)
+ GET /assets/transformations/user2-before.jpg 404 in 337ms (compile: 184ms, render: 153ms)
+ GET /assets/transformations/user3-before.jpg 404 in 294ms (compile: 70ms, render: 225ms)
+ GET /assets/transformations/user2-after.jpg 404 in 299ms (compile: 29ms, render: 270ms)
+ GET /assets/transformations/user3-after.jpg 404 in 293ms (compile: 184ms, render: 108ms)
+✓ Compiled in 54ms
+✓ Compiled in 55ms
+✓ Compiled in 62ms
+✓ Compiled in 126ms
+✓ Compiled in 57ms
+✓ Compiled in 43ms
+✓ Compiled in 55ms
+✓ Compiled in 79ms
+ GET /weight-loss-juice 200 in 735ms (compile: 288ms, render: 447ms)
+ GET /testimonials/anupama.jpg 404 in 478ms (compile: 131ms, render: 348ms)
+ GET /testimonials/sandhya.jpg 404 in 490ms (compile: 18ms, render: 472ms)
+ GET /testimonials/priya.jpg 404 in 329ms (compile: 50ms, render: 279ms)
+ GET /testimonials/padmavathi.jpg 404 in 332ms (compile: 26ms, render: 306ms)
+ GET /testimonials/meena.jpg 404 in 328ms (compile: 145ms, render: 182ms)
+ GET /testimonials/meenakshi.jpg 404 in 331ms (compile: 115ms, render: 216ms)
+ GET /weight-loss-collage.jpg 404 in 256ms (compile: 23ms, render: 233ms)
+ GET /testimonials/sumitra.jpg 404 in 244ms (compile: 47ms, render: 198ms)
+✓ Compiled in 91ms
+ GET /testimonials/rekha.jpg 404 in 138ms (compile: 10ms, render: 128ms)
+✓ Compiled in 81ms

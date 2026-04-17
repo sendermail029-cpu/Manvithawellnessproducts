@@ -15,7 +15,7 @@ const PRODUCT = {
   stock: 19,
   timerMinutes: 15,
   resultDays: "45 రోజుల",
-  images: ["/weightloss%20(1).png", "/weightloss%20(2).png"],
+  images: ["/weightloss%20(1).png", "/weightloss%20(2).png", ],
   // ── Place your collage image in /public/weight-loss-collage.jpg ──
   collageImage: "/weight-loss-collage.jpg",
 };

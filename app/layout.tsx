@@ -2,9 +2,9 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata = {
-  title: "GLUCOAMRUTH | మధుమేహం సహాయక ఆరోగ్య ఉత్పత్తి",
+  title: "Manvitha Wellness | బరువు తగ్గింపు & జీర్ణక్రియ ఆరోగ్య ఉత్పత్తులు",
   description:
-    "GLUCOAMRUTH మధుమేహ నియంత్రణకు సహాయకంగా రూపొందించిన సహజ ఆరోగ్య ఫార్ములా.",
+    "Manvitha Wellness బరువు తగ్గించడానికి మరియు జీర్ణక్రియను మెరుగుపరచడానికి సహజ ఆరోగ్య ఉత్పత్తులను అందిస్తుంది. మెటబాలిజం పెంచడం, బెల్లీ ఫ్యాట్ తగ్గించడం మరియు సంపూర్ణ ఆరోగ్యాన్ని మెరుగుపరచడంలో సహాయపడుతుంది.",
 };
 
 export default function RootLayout({
