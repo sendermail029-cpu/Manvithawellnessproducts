@@ -20,6 +20,7 @@ const PRODUCT = {
     "/weight (2).jpeg",
     "/weight (3).jpeg",
     "/weight (4).jpeg",
+   
   ],
   collageImage: "/weight-loss-collage.jpg",
 };
@@ -255,17 +256,7 @@ useEffect(() => {
       <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.528 5.849L.057 23.9l6.274-1.643A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.015-1.376l-.36-.213-3.728.977.996-3.635-.234-.374A9.818 9.818 0 1112 21.818z"/>
     </svg>
   );
-const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-useEffect(() => {
-  intervalRef.current = setInterval(() => {
-    setImgIdx(p => (p + 1) % PRODUCT.images.length);
-  }, 6000);
-
-  return () => {
-    if (intervalRef.current) clearInterval(intervalRef.current);
-  };
-}, []);
 
   return (
     <>
@@ -317,36 +308,36 @@ useEffect(() => {
      .psh{
   background: rgba(255,255,255,.08);
   border: 1px solid rgba(255,255,255,.16);
-  border-radius: 24px;
+  border-radius: 32px;
   overflow: hidden;
-  padding: 0;
-  height: 100%;
-  min-height: 540px; /* frame height */
+  padding: 0 0 14px;
+  width: 100%;
+  max-width: 560px;
   position: relative;
 }
 
 .ptk{
   display: flex;
   height: 100%;
-  transition: transform 1.2s ease-in-out; /* smoother */
+  transition: transform 1.2s ease-in-out;
 }
 
 .psl{
   min-width: 100%;
   width: 100%;
-  height: 540px; /* same as frame */
+  height: 520px;
   display: flex;
-  align-items: stretch;
-  justify-content: stretch;
-  padding: 0;
+  align-items: center;     /* 👈 change */
+  justify-content: center; /* 👈 change */
+  padding: 0px;           /* 👈 optional */
 }
 
 .pimg{
   width: 100%;
   height: 100%;
-  object-fit: cover; /* fills full frame */
-  display: block;
-  margin: 0;
+  object-fit: contain;   /* 👈 THIS IS THE FIX */
+  object-position: center;
+  background: #fff;      /* 👈 optional (better look) */
 }
         .bash{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:24px;overflow:hidden;padding:12px;display:flex;flex-direction:column}
         .batk{display:flex;flex:1;transition:transform .8s cubic-bezier(.4,0,.2,1)}
@@ -554,13 +545,42 @@ useEffect(() => {
 
           {/* Product + Before/After grid */}
           <div className="hgrid fu fu2">
-            <div className="psh">
+           <div
+  className="psh"
+  style={{
+    position: "relative",
+    width: "100%",
+    margin: "0 auto"
+  }}
+>
               <div className="ptk" style={{ transform: `translateX(-${imgIdx * 100}%)` }}>
-                {PRODUCT.images.map((src, i) => (
-                  <div key={i} className="psl">
-                    <img src={src} alt={PRODUCT.name} className="pimg" onError={e => { (e.target as HTMLImageElement).style.opacity = ".3"; }} />
-                  </div>
-                ))}
+             {PRODUCT.images.map((src, i) => (
+  <div
+    key={i}
+    className="psl"
+    style={{
+      minWidth: "100%",
+      width: "100%",
+      height: "520px"
+    }}
+  >
+    <img
+      src={src}
+      alt={`${PRODUCT.name} ${i + 1}`}
+      className="pimg"
+      style={{
+        width: "100%",
+        height: "100%",
+        objectFit: "cover",
+        objectPosition: "center",
+        display: "block"
+      }}
+      onError={e => {
+        (e.target as HTMLImageElement).style.opacity = ".3";
+      }}
+    />
+  </div>
+))}
               </div>
               <div className="dots">
                 {PRODUCT.images.map((_, i) => <span key={i} className={`dot${imgIdx === i ? " on" : ""}`} onClick={() => setImgIdx(i)} />)}
