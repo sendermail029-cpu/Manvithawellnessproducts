@@ -12,9 +12,10 @@ const INITIAL_STOCK = 23;
 const TIMER_SECONDS = 15 * 60;
 const PRODUCT_NAME = "Digestive Juice";
 const PRODUCT_IMAGES = [
-  "/digestion%20juice%20(1).png",
-  "/digestion%20juice%20(2).png",
-  "/digestion%20juice%20(3).png",
+  "/digestivejuice (1).jpeg",
+  "/digestivejuice (2).jpeg",
+  "/digestivejuice (3).jpeg",
+   // ✅ add this
 ];
 
 export default function ManvithaWellnessPage() {
@@ -39,7 +40,9 @@ export default function ManvithaWellnessPage() {
   }, []);
 
   useEffect(() => {
-    const iv = setInterval(() => setActiveImg(p => (p + 1) % PRODUCT_IMAGES.length), 3800);
+   const iv = setInterval(() => {
+  setActiveImg(p => (p + 1) % PRODUCT_IMAGES.length);
+}, 6000); // ✅ 6 seconds
     return () => clearInterval(iv);
   }, []);
 
@@ -195,11 +198,27 @@ export default function ManvithaWellnessPage() {
         .ticker-track{display:inline-flex;animation:ticker 36s linear infinite;}
         .ticker-item{display:inline-flex;align-items:center;padding:0 24px;}
 
-        /* ---- CAROUSEL ---- */
-        .carousel-window{overflow:hidden;border-radius:24px;}
-        .carousel-track{display:flex;transition:transform .85s cubic-bezier(.77,0,.18,1);}
-        .carousel-slide{min-width:100%;display:flex;align-items:center;justify-content:center;}
+  .carousel-window{
+  overflow: hidden;
+  border-radius: 32px;
+  width: 100%;
+  height: 100%;
+}
 
+.carousel-track{
+  display: flex;
+  height: 100%;
+  transition: transform 1.2s ease-in-out;
+}
+
+.carousel-slide{
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
         /* ---- MODAL ---- */
         .modal-bg{position:fixed;inset:0;background:rgba(0,0,0,0.82);z-index:1000;display:flex;align-items:center;justify-content:center;padding:14px;backdrop-filter:blur(10px);animation:fadeIn .3s ease;}
         .modal-box{background:linear-gradient(160deg,#0d1a12,#111e15);border:1px solid rgba(212,175,55,0.2);border-radius:28px;width:100%;max-width:500px;max-height:92vh;overflow-y:auto;padding:28px 24px;position:relative;animation:scaleIn .3s ease;box-shadow:0 30px 80px rgba(0,0,0,0.6);}
@@ -270,12 +289,50 @@ export default function ManvithaWellnessPage() {
 
           {/* Product carousel */}
           <div style={{animation:"fadeUp .7s .1s ease both",marginBottom:"24px"}}>
-            <div style={{position:"relative",width:"min(100%,380px)",margin:"0 auto",padding:"20px 20px 14px",borderRadius:"32px",background:"linear-gradient(160deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))",border:"1px solid rgba(212,175,55,0.15)",boxShadow:"0 24px 60px rgba(0,0,0,0.5),inset 0 1px 0 rgba(212,175,55,0.08)"}}>
-              <div className="carousel-window">
+          <div
+  style={{
+    position: "relative",
+    width: "min(100%, 560px)",
+    margin: "0 auto",
+    padding: "0 0 14px",
+    borderRadius: "32px",
+    background: "linear-gradient(160deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))",
+    border: "1px solid rgba(212,175,55,0.15)",
+    boxShadow: "0 24px 60px rgba(0,0,0,0.5), inset 0 1px 0 rgba(212,175,55,0.08)",
+    overflow: "hidden"
+  }}
+>
+            <div
+  className="carousel-window"
+  style={{
+    width: "100%",
+    height: "520px",
+    borderRadius: "32px",
+    overflow: "hidden"
+  }}
+>
                 <div className="carousel-track" style={{transform:`translateX(-${activeImg*100}%)`}}>
                   {PRODUCT_IMAGES.map((src,i) => (
-                    <div key={i} className="carousel-slide">
-                      <img src={src} alt={`${PRODUCT_NAME} ${i+1}`} style={{width:"100%",maxWidth:"320px",height:"300px",objectFit:"contain",filter:"drop-shadow(0 20px 40px rgba(0,0,0,0.5)) drop-shadow(0 0 60px rgba(30,120,60,0.25))"}} />
+                    <div
+  key={i}
+  className="carousel-slide"
+  style={{
+    minWidth: "100%",
+    width: "100%",
+    height: "520px"
+  }}
+>
+<img
+  src={src}
+  alt={`${PRODUCT_NAME} ${i + 1}`}
+  style={{
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    objectPosition: "center",
+    display: "block"
+  }}
+/>
                     </div>
                   ))}
                 </div>
@@ -345,11 +402,11 @@ export default function ManvithaWellnessPage() {
       </div>
 
       {/* ===== PROBLEMS ===== */}
-      <section className="scroll-reveal" style={{padding:"70px 20px",background:"#080e0b"}}>
+      <section className="scroll-reveal" style={{padding:"70px 20px",background:"#ffffff"}}>
         <div style={{maxWidth:"600px",margin:"0 auto"}}>
           <div style={{textAlign:"center",marginBottom:"40px"}}>
             <span className="gold-shimmer-text serif" style={{fontSize:".75rem",fontWeight:600,letterSpacing:".2em",textTransform:"uppercase",display:"block",marginBottom:"12px"}}>The Problem</span>
-            <h2 className="telugu serif" style={{fontSize:"2rem",fontWeight:600,color:"#f0ece4",lineHeight:1.3}}>మీకు ఈ సమస్యలు ఉన్నాయా?</h2>
+            <h2 className="telugu serif" style={{fontSize:"2rem",fontWeight:600,color:"#0f3d2e",lineHeight:1.3}}>మీకు ఈ సమస్యలు ఉన్నాయా?</h2>
             <div className="divider-gold" style={{maxWidth:"100px",margin:"16px auto 0"}}></div>
           </div>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"14px"}}>

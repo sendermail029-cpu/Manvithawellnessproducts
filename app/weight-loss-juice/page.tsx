@@ -11,12 +11,16 @@ const PRODUCT = {
   onlineDiscount: 10,
   phone: "8333914149",
   whatsapp: "918333914149",
-  email: "infomanviyha15@gmail.com",
+  email: "infomanvitha15@gmail.com",
   stock: 19,
   timerMinutes: 15,
   resultDays: "45 రోజుల",
-  images: ["/weightloss%20(1).png", "/weightloss%20(2).png", ],
-  // ── Place your collage image in /public/weight-loss-collage.jpg ──
+  images: [
+    "/weight (1).jpeg",
+    "/weight (2).jpeg",
+    "/weight (3).jpeg",
+    "/weight (4).jpeg",
+  ],
   collageImage: "/weight-loss-collage.jpg",
 };
 
@@ -187,11 +191,20 @@ export default function WeightLossPage() {
     return () => clearInterval(t);
   }, []);
 
-  useEffect(() => {
-    const t1 = setInterval(() => setImgIdx(p => (p + 1) % PRODUCT.images.length), 2800);
-    const t2 = setInterval(() => setBaIdx(p => (p + 1) % beforeAfterData.length), 3200);
-    return () => { clearInterval(t1); clearInterval(t2); };
-  }, []);
+useEffect(() => {
+  const t1 = setInterval(() => {
+    setImgIdx(p => (p + 1) % PRODUCT.images.length);
+  }, 6000); // 👉 6 seconds
+
+  const t2 = setInterval(() => {
+    setBaIdx(p => (p + 1) % beforeAfterData.length);
+  }, 6000); // optional: also slow this
+
+  return () => {
+    clearInterval(t1);
+    clearInterval(t2);
+  };
+}, []);
 
   useEffect(() => {
     document.body.style.overflow = showModal ? "hidden" : "";
@@ -242,6 +255,17 @@ export default function WeightLossPage() {
       <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.528 5.849L.057 23.9l6.274-1.643A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.015-1.376l-.36-.213-3.728.977.996-3.635-.234-.374A9.818 9.818 0 1112 21.818z"/>
     </svg>
   );
+const intervalRef = useRef<NodeJS.Timeout | null>(null);
+
+useEffect(() => {
+  intervalRef.current = setInterval(() => {
+    setImgIdx(p => (p + 1) % PRODUCT.images.length);
+  }, 6000);
+
+  return () => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
+  };
+}, []);
 
   return (
     <>
@@ -290,10 +314,40 @@ export default function WeightLossPage() {
         /* Hero grid */
         .hgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;width:100%;max-width:680px;margin-bottom:28px}
         @media(max-width:560px){.hgrid{grid-template-columns:1fr}}
-        .psh{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:24px;overflow:hidden;padding:12px}
-        .ptk{display:flex;transition:transform .8s cubic-bezier(.4,0,.2,1)}
-        .psl{min-width:100%;display:flex;align-items:center;justify-content:center;padding:8px}
-        .pimg{width:100%;max-width:240px;height:300px;object-fit:contain;display:block;margin:0 auto;filter:drop-shadow(0 16px 32px rgba(0,0,0,.4))}
+     .psh{
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 24px;
+  overflow: hidden;
+  padding: 0;
+  height: 100%;
+  min-height: 540px; /* frame height */
+  position: relative;
+}
+
+.ptk{
+  display: flex;
+  height: 100%;
+  transition: transform 1.2s ease-in-out; /* smoother */
+}
+
+.psl{
+  min-width: 100%;
+  width: 100%;
+  height: 540px; /* same as frame */
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 0;
+}
+
+.pimg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills full frame */
+  display: block;
+  margin: 0;
+}
         .bash{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:24px;overflow:hidden;padding:12px;display:flex;flex-direction:column}
         .batk{display:flex;flex:1;transition:transform .8s cubic-bezier(.4,0,.2,1)}
         .basl{min-width:100%;padding:2px}

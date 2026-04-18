@@ -315,3 +315,20 @@ Creating turbopack project { dir: 'C:\\Users\\DELL\\Downloads\\glucoamruth-main'
 ✓ Compiled in 91ms
  GET /testimonials/rekha.jpg 404 in 138ms (compile: 10ms, render: 128ms)
 ✓ Compiled in 81ms
+✓ Compiled in 53ms
+ GET /weight-loss-juice 200 in 459ms (compile: 338ms, render: 120ms)
+ GET /weight-loss-juice 200 in 105ms (compile: 4ms, render: 102ms)
+ GET /weight-loss-juice 200 in 74ms (compile: 3ms, render: 71ms)
+ GET /weight-loss-juice 200 in 41ms (compile: 9ms, render: 31ms)
+✓ Compiled in 55ms
+ GET /weightloose.png 404 in 448ms (compile: 277ms, render: 171ms)
+✓ Compiled in 51ms
+✓ Compiled in 57ms
+ GET /weight%20.png 404 in 114ms (compile: 8ms, render: 106ms)
+✓ Compiled in 67ms
+ GET /weight%.png 404 in 114ms (compile: 8ms, render: 106ms)
+✓ Compiled in 77ms
+✓ Compiled in 65ms
+ GET / 200 in 357ms (compile: 145ms, render: 212ms)
+✓ Compiled in 113ms
+ GET / 200 in 255ms (compile: 116ms, render: 139ms)
